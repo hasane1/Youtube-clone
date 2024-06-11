@@ -5,11 +5,12 @@
         <link rel = "stylesheet" href="intro-to-html/styles/header.css"> 
         <link rel = "stylesheet" href="intro-to-html/styles/video.css"> 
         <link rel = "stylesheet" href="intro-to-html/styles/general.css">
+        <link rel = "stylesheet" href="intro-to-html/styles/sidebar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body >
       <div class = "header">
         <div class = "left-section">
           <img class = "hamburger-menu" src = "icons/hamburger-menu.svg">
@@ -19,22 +20,75 @@
         <div class = "middle-section">
           <input class = "search" type = "text" placeholder = "Search">
           <button  class = "search-button">
-            <img src = "icons/search.svg">
+            <img class = "search-icon" src = "icons/search.svg">
+            <div class = "tooltip">
+              Search
+            </div>
           </button>
           <button class = "voice-button">
-            <img src="icons/voice-search-icon.svg">
+            <img class = "voice-search-icon" src="icons/voice-search-icon.svg">
+            <div class = "tooltip">
+              Search with your voice
+            </div>
           </button>
         </div>
         <div class = "right-section">
-          right
+          <img class = "upload-icon" src= "icons/upload.svg">
+          <img class = "apps-icon" src = "icons/youtube-apps.svg">
+          <div class = "notifs-container">
+          <img class = "notif-icon" src = "icons/notifications.svg">
+          <div class = "notif-counter">3</div>
+          </div>
+          <img class = "user-pic" src = "thumbnails/unnamed.jpg">
         </div>
         
+      </div>
+      <div class = "sidebar">
+        <div class = "sidebar-link">
+          <img class = "home" src = "icons/home.svg">
+          <div>
+            Home
+          </div>
+        </div>
+        <div class = "sidebar-link">
+          <img class = "explore" src = "icons/explore.svg">
+          <div>
+            Explore
+          </div>
+        </div>
+        <div class = "sidebar-link">
+          <img class = "subs" src = "icons/subscriptions.svg">
+          <div>
+            Subscriptions
+          </div>
+        </div>
+        <div class = "sidebar-link">
+          <img class = "originals" src = "icons/originals.svg">
+          <div>
+            Originals
+          </div>
+        </div>
+        <div class = "sidebar-link">
+          <img class = "music" src = "icons/youtube-music.svg">
+          <div>
+            Music
+          </div>
+        </div>
+        <div class = "sidebar-link">
+          <img class = "library" src = "icons/library.svg">
+          <div>
+            Library
+          </div>
+        </div>
       </div>
       
       <div class = "video-grid">
         <div class = "video-preview">
           <div class = "thumbnail-row">
             <img class = "thumbnail" src = "thumbnails/thumbnail-1.webp">
+            <div class = "video-time">
+              14:20
+            </div>
           </div>
           <div class = "video-info-grid">
             <div class = "channel-pic">
@@ -56,6 +110,9 @@
         <div class = "video-preview">
           <div class = "thumbnail-row">
             <img class = "thumbnail" src = "thumbnails/thumbnail-2.webp"> 
+            <div class = "video-time">
+              8:22
+            </div>
           </div>
           <div class = "video-info-grid">
           <div class = "channel-pic">
@@ -77,7 +134,11 @@
         </div>
         <div class = "video-preview">
           <div class = "thumbnail-row">
+            
             <img class = "thumbnail" src = "thumbnails/thumbnail-3.webp">
+            <div class = "video-time">
+              9:13
+            </div>
           </div>
           <div class = "video-info-grid">
             <div class = "channel-pic">
@@ -100,6 +161,9 @@ Crazy Tik Toks Taken Moments Before DISASTER
         <div class = "video-preview">
           <div class = "thumbnail-row">
             <img class = "thumbnail" src = "thumbnails/thumbnail-4.webp"> 
+            <div class = "video-time">
+              22:09
+            </div>
           </div>
           <div class = "video-info-grid">
           <div class = "channel-pic">
@@ -123,6 +187,9 @@ The Simplest Math Problem No One Can Solve - Collatz Conjecture
         <div class = "video-preview">
           <div class = "thumbnail-row">
             <img class = "thumbnail" src = "thumbnails/thumbnail-5.webp">
+            <div class = "video-time">
+              11:17
+            </div>
           </div>
           <div class = "video-info-grid">
             <div class = "channel-pic">
@@ -144,6 +211,9 @@ The Simplest Math Problem No One Can Solve - Collatz Conjecture
         <div class = "video-preview">
           <div class = "thumbnail-row">
             <img class = "thumbnail" src = "thumbnails/thumbnail-6.webp"> 
+            <div class = "video-time">
+              19:59
+            </div>
           </div>
           <div class = "video-info-grid">
           <div class = "channel-pic">

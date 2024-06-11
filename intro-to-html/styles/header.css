@@ -3,8 +3,18 @@
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:50px;
+    background-color: white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(230,230,230);
+    z-index:100;
 }
+
 
 .left-section{
     display:flex;
@@ -19,8 +29,12 @@
     align-items: center;
 }
 .right-section{
-    background:lightblue;
-    width:200px
+    width: 180px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-right:20px;
+    flex-shrink:0;
 }
 .hamburger-menu{
     margin-left:24px;
@@ -32,11 +46,30 @@
 }
 .search-button{
     height:40px;
-    width:60px;
+    width:66px;
+    background-color:rgb(240,240,240);
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(192,192,192);
+    margin-left:-1px;
+    margin-right:10px;
+    position:relative;
 }
 .voice-button{
     height:40px;
     width:40px;
+    border-radius: 20px;
+    border:none;
+    background-color:rgb(245,245,245);
+}
+.search-icon{
+    height:25px;
+    
+    
+}
+.voice-search-icon{
+    height:24px;
+    margin-top:4px;
 }
 
 .search{
@@ -49,8 +82,68 @@
     border-color: rgb(192,192,192);
     border-radius:2px;
     box-shadow:inset 1px 2px 3px rgba(0,0,0, 0.05);
+    width:0;
+    
 }
 .search::placeholder{
     font-family:Roboto,Arial;
     font-size:16px;
+}
+.upload-icon{
+    height:24px;
+}
+.apps-icon{
+    height:24px;
+}
+.notif-icon{
+    height:24px;
+}
+.user-pic{
+    height:32px;
+    border-radius:16px;
+}
+.notifs-container{
+    position:relative;
+
+}
+.notif-counter{
+    font-family:Roboto,Arial;
+    font-size:11px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    border-radius: 10px;
+    position:absolute;
+    top: -2px;
+    right: -5px;
+    background-color:red;
+    color:white;
+}
+
+.search-button .tooltip, .voice-button .tooltip {
+    position:absolute;
+    background-color:gray;
+    color:white;
+    padding:4px;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:2px;
+    font-size:12px;
+    bottom:-30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events:none;
+    white-space:nowrap;
+}
+
+.search-button:hover .tooltip, .voice-button:hover .tooltip{
+    opacity:1;
+}
+
+.search-button .voice-button{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
